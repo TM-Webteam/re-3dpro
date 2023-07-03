@@ -1,0 +1,130 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <section class="hero-lower hpng">
+    <div class="containers">
+      <div class="ttl-sub mb15">高純度窒素発生装置</div>
+      <h1 class="ttl-primary-lower" data-aos="fade-right">High Purity Nitrogen Generator</h1>
+      <a href="" class="more">ご相談・お問合せ</a>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li>High Purity Nitrogen Generator</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="intro-com">
+    <div class="containers">
+      <div class="flex jcA item">
+        <div class="item__img" data-aos="zoom-in"><img src="/dcms_media/assets/img/hpng/img-intro.webp" alt="High Purity Nitrogen Generator"></div>
+        <div class="item__box">
+          <h2 class="item__box--ttl">高純度窒素発生装置</h2>
+          <div class="item__box--txt">
+            <p>99.999%の超高純度ガスを発生させることが可能な高純度窒素ガス発生装置です。</p>
+            <p>造形雰囲気の不純物削減効果はもちろん、金属3Dプリンターの造形開始までの待ち時間を短縮し、造形品質の向上と安定化、コスト低減に貢献します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="figure-com">
+    <div class="containers">
+      <h2 class="ttl-secondary-lower"><span class="small">造形雰囲気中の酸素および<br class="sp-only">水分に対するソリューション</span><br>高純度窒素発生システム<br class="sp-only"><span class="bg">「High Purity Nitrogen Generator」</span></h2>
+      <div class="figure-com__img" data-aos="fade"><img src="/dcms_media/assets/img/hpng/img-figure.webp" alt="「High Purity Nitrogen Generator」"></div>
+    </div>
+  </section>
+
+  <section class="symmetry">
+    <div class="containers">
+      <h2 class="ttl-secondary-lower"><span class="small">大陽日酸 presents</span><br>金属AMプロセスの生産性向上を担う<br class="sp-only">「高純度窒素発生装置」</h2>
+      <div class="flex sp-reverse item">
+        <div class="item__box">
+          <h3 class="item__box--ttl">造形品質の担保に寄与する高純度窒素</h3>
+          <div class="item__box--txt">
+            <p>通常のプリンタに付属する高純度窒素発生装置（PSA）の純度は一般に99.9%（3N）です。<br>一方、本製品であれは99.999%（5N）の窒素を発生させることが可能です。</p>
+            <p>この高純度の窒素により、3Dプリンターにおける造形雰囲気の不純物削減を実現し、造形品質の向上と安定化、造形開始までのパージ時間短縮によるコスト低減に貢献します。</p>
+          </div>
+        </div>
+        <div class="item__img" data-aos="fade-left"><img src="/dcms_media/assets/img/hpng/img-symmetry01.webp" alt="造形品質の担保に寄与する高純度窒素"></div>
+      </div>
+      <div class="flex item">
+        <div class="item__img" data-aos="fade-right"><img src="/dcms_media/assets/img/hpng/img-symmetry02.webp" alt="造形品質を損なう不純物「酸素」への対応策"></div>
+        <div class="item__box">
+          <h3 class="item__box--ttl">造形品質を損なう不純物「酸素」への対応策</h3>
+          <div class="item__box--txt">
+            <p>チタンを原材料として金属AMにて造形する場合、雰囲気中の微量の酸素と反応して酸化物を生成し、造形品質を損なうケースが多くみられます。</p>
+            <p>造形の特性を損なわず、かつスパッタ・ヒュームの活性化によるメルトプールの荒れを生じさせない「造形雰囲気中の不純物低減」は、AMプロセスにおける重要な管理要素です。</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex sp-reverse item">
+        <div class="item__box">
+          <h3 class="item__box--ttl">造形品質を損なう不純物「水分」への対応策</h3>
+          <div class="item__box--txt">
+            <p>アルミニウム及びアルミニウム合金の代表的な欠陥の一つに、熱処理後に発生する合金表面の膨れや、ミクロポアの発生による合金の機能特性低下が挙げられます。</p>
+            <p>これらの表面欠陥の要因となる「造形雰囲気中の水分管理」や「金属粉末の水分管理」も、AMプロセスにおける重要な管理要素といえます。</p>
+          </div>
+        </div>
+        <div class="item__img" data-aos="fade-left"><img src="/dcms_media/assets/img/hpng/img-symmetry03.webp" alt="造形品質を損なう不純物「水分」への対応策"></div>
+      </div>
+      <div class="balloon">
+        <div class="balloon__txt">造形品質の安定に寄与するシステム</div>
+        <a href="" class="more">高純度窒素発生装置のお問合せはこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary">商品に関するご相談・お問合せ</h2>
+      <div class="lead">金属3Dプリンターにつきまして、お困りごとがありましたらお気軽にご連絡ください。</div>
+      <a href="" class="more-orange">ご相談・お問合せ</a>
+      <div class="inquiry__box">
+        <h3 class="inquiry__box--ttl">商品の詳細はこちらから</h3>
+        <div class="flex jcC inquiry__box--list">
+          <ul class="blank">
+            <li><a href="">金属3Dプリンター｜Velo3D</a></li>
+            <li><a href="">金属3Dプリンター｜GEFERTEC</a></li>
+            <li><a href="">金属3Dプリンター｜MELTIO</a></li>
+            <li><a href="">金属3Dプリンター｜OPTOMEC</a></li>
+          </ul>
+          <ul>
+            <li><a href="">PrintPure ™</a></li>
+            <li><a href="">高純度窒素発生装置</a></li>
+            <li><a href="">金属粉末乾燥保管キャビネット</a></li>
+            <li><a href="">ワイヤー・金属粉末（お問合せ）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

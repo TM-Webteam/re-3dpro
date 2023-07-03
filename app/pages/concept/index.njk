@@ -1,0 +1,91 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <section class="hero-lower concept">
+    <div class="containers">
+      <h1 class="ttl-primary-lower" data-aos="fade-right">ガスソリューションで<br class="pc-only">金属3Dプリンターの持つ構造的な問題を解決</h1>
+      <div class="ttl-sub">品質と生産性の向上をリードする大陽日酸</div>
+      <a href="" class="more">ご相談・お問合せ</a>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li>コンセプト</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="intro-concept">
+    <div class="containers">
+      <div class="intro-concept__box" data-aos="fade-up">
+        <p>私たち大陽日酸は、産業ガス分野における長年の経験を活かし、<br class="pc-only">高度な技能と蓄積したノウハウと共に、幅広いガスソリューションをご提供しております。<br>お客様のビジネスパートナーとして製品製造に必要な品質と生産性の一段の向上をリードし、<br>最高のパフォーマンス実現に貢献いたします。</p>
+        <p>金属３Dプリンターの導入からメンテナンス、<br>ガス関連機器など一貫したソリューションを提案いたします。</p>
+        <p>購入前の試作、金属３Dプリンターのご見学なども可能ですので、お気軽にご連絡下さい。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-concept">
+    <div class="containers">
+      <h2 class="ttl-secondary">先進的な金属 AM による<br class="sp-only">スケーラブルな製造戦略の導入</h2>
+      <div class="lead">Implementing Scalable Manufacturing Strategies with Advanced Metal AM</div>
+      <div class="video-concept__box">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aXHJ0hyQMto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary">商品に関するご相談・お問合せ</h2>
+      <!-- <div class="lead">金属3Dプリンター・原材料、ガスソリューションの導入に関するご相談まで、お気軽にご連絡ください。</div> -->
+      <div class="lead">金属3Dプリンターにつきまして、お困りごとがありましたらお気軽にご連絡ください。</div>
+      <a href="" class="more-orange">ご相談・お問合せ</a>
+      <div class="inquiry__box">
+        <h3 class="inquiry__box--ttl">商品の詳細はこちらから</h3>
+        <div class="flex jcC inquiry__box--list">
+          <ul class="blank">
+            <li><a href="">金属3Dプリンター｜Velo3D</a></li>
+            <li><a href="">金属3Dプリンター｜GEFERTEC</a></li>
+            <li><a href="">金属3Dプリンター｜MELTIO</a></li>
+            <li><a href="">金属3Dプリンター｜OPTOMEC</a></li>
+          </ul>
+          <ul>
+            <li><a href="">PrintPure ™</a></li>
+            <li><a href="">高純度窒素発生装置</a></li>
+            <li><a href="">金属粉末乾燥保管キャビネット</a></li>
+            <li><a href="">ワイヤー・金属粉末（お問合せ）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</main>
+
+{% endblock %}

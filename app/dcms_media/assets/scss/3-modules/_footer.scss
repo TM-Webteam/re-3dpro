@@ -1,0 +1,118 @@
+/*
+  ----------------
+  Footer
+  ----------------
+*/
+
+
+footer {
+  background: #000;
+  color: #ACACAC;
+  font-size: 14px;
+  font-weight: 500;
+  @media #{$sp} {
+    font-size: 12px;
+  }
+  .containers {
+    padding: 40px 30px;
+    border-bottom: 1px solid #707070;
+    position: relative;
+    @media #{$sp} {
+      padding: 20px 15px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      right: 0;
+      width: 30px;
+      height: 1px;
+      background: #FA6600;
+    } 
+  }
+  .logo {
+    margin-bottom: 30px;
+    &__img {
+      width: 140px;
+      @media #{$sp} {
+        width: 100px;
+      }
+    }
+    &__in {
+      width: 30px;
+    }
+  }
+  .nav {
+    &__box {
+      // width: calc(100% / 5 - 20px);
+      @media #{$sp} {
+        width: calc(100% / 2 - 10px);
+        margin-bottom: 15px;
+      }
+      &:first-child {
+        padding-top: 50px;
+        @media #{$sp} {
+          padding-top: 0;
+        }
+      }
+      &--ttl {
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 20px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      &--list {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+          a {
+            &:hover {
+              opacity: 1;
+              text-decoration: underline;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .aside {
+    max-width: 1160px;
+    padding: 20px 0 30px;
+    margin: 0 auto;
+    @media #{$sp} {
+      font-size: 12px;
+      padding: 15px;
+    }
+    &__nav {
+      margin-bottom: 15px;
+      @media #{$sp} {
+        margin-bottom: 10px;
+      }
+      li {
+        padding: 0 15px;
+        @media #{$sp} {
+          padding: 0 10px;
+          width: calc(100% / 2 - 10px);
+        }
+        a {
+          &:hover {
+            opacity: 1;
+            text-decoration: underline;
+            color: #fff;
+          }
+        }
+      }
+    }
+    &__copy {
+      font-size: 12px;
+      @media #{$sp} {
+        font-size: 10px;
+      }
+    }
+  }
+  
+}

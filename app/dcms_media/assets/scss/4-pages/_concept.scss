@@ -1,0 +1,56 @@
+/*
+  ----------------
+  ガスソリューションで金属3Dプリンターの持つ構造的な問題を解決
+  ----------------
+*/
+
+.hero-lower.concept {
+  background: url("../img/concept/bg-hero.webp") 100% 50% / contain no-repeat #091626;
+  @media #{$sp} {
+    background: url("../img/concept/bg-hero-sp.webp") 50% 0 / 100% no-repeat #091626;
+  }
+}
+
+.intro-concept {
+  color: #fff;
+  background: url("../img/concept/bg-intro.webp") 50% / cover no-repeat;
+  background-attachment: fixed;
+  height: 444px;
+  @media #{$sp} {
+    background-attachment: scroll;
+    height: auto;
+  }
+  &__box {
+    background-color:rgba(0,0,0,0.55);
+    padding: 40px 50px;
+    font-weight: 500;
+    text-align: center;
+    @media #{$sp} {
+      padding: 15px;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.video-concept {
+  background: url("../img/concept/bg-video.webp") 50% / cover no-repeat;
+  &__box {
+    text-align: center;
+    iframe {
+      object-fit: contain;
+      aspect-ratio: 16 / 9;
+      width: 62%;
+      height: auto;
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+  }
+}

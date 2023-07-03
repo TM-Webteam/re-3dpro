@@ -1,0 +1,121 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <section class="hero-lower pp">
+    <div class="containers">
+      <div class="ttl-sub mb15">循環精製システム</div>
+      <h1 class="ttl-primary-lower" data-aos="fade-right">3DPro® PrintPure ™</h1>
+      <a href="" class="more">ご相談・お問合せ</a>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li>3DPro® PrintPure ™</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="intro-com">
+    <div class="containers">
+      <div class="flex jcA item">
+        <div class="item__img" data-aos="zoom-in"><img src="/dcms_media/assets/img/printpure/img-intro.webp" alt="循環精製システム PrintPure ™"></div>
+        <div class="item__box">
+          <h2 class="item__box--ttl">循環精製システム　PrintPure ™</h2>
+          <div class="item__box--txt">
+            <p>PBF式プリンター向けの雰囲気ガスの循環精製システムです。</p>
+            <p>造形特性を劣化させるプリンター内雰囲気ガスの不純物<br class="pc-only">（酸素・水分）を1000ppm以上から数ppmレベルまで低減。<br class="pc-only">造形品質の向上、安定化に寄与します。</p>
+            <p><b>【日本国特許：6720400号】</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="figure-com">
+    <div class="containers">
+      <h2 class="ttl-secondary-lower"><span class="small">造形雰囲気中の酸素および水分に対する<br class="sp-only">ソリューション</span><br>PBF式金属AM装置向けの<br class="sp-only"><span class="bg">アドオン型雰囲気循環精製システム</span></h2>
+      <div class="figure-com__img" data-aos="fade"><img src="/dcms_media/assets/img/printpure/img-figure.webp" alt="循環精製システム PrintPure ™"></div>
+    </div>
+  </section>
+
+  <section class="symmetry">
+    <div class="containers">
+      <h2 class="ttl-secondary-lower"><span class="small">大陽日酸 presents</span><br>金属3Dプリンターの緻密性を<br class="sp-only">底上げする「PrintPure ™」</h2>
+      <div class="flex sp-reverse item">
+        <div class="item__box">
+          <h3 class="item__box--ttl">緻密さが求められる金属AMに<br class="sp-only">最適なソリューション</h3>
+          <div class="item__box--txt">
+            <p>AMは、従来の加工法では不可能な三次元複雑形状品の加工を可能になるとともに、デジタル技術との整合性もよく、最も有力かつ将来性のある加工法の一つです。</p>
+            <p>大陽日酸では、溶接・粉末冶金の知見を活かし、産業ガスメーカーの視点から、雰囲気ガスの種類や純度による品質管理・向上に寄与する「PrintPure ™」をご提供しています。</p>
+          </div>
+        </div>
+        <div class="item__img" data-aos="fade-left"><img src="/dcms_media/assets/img/printpure/img-symmetry01.webp" alt="緻密さが求められる金属AMに最適なソリューション"></div>
+      </div>
+      <div class="flex item">
+        <div class="item__img" data-aos="fade-right"><img src="/dcms_media/assets/img/printpure/img-symmetry02.webp" alt="造形品質を損なう不純物の除去に特化"></div>
+        <div class="item__box">
+          <h3 class="item__box--ttl">造形品質を損なう不純物の除去に特化</h3>
+          <div class="item__box--txt">
+            <p>一般的な PBF式SLMの造形雰囲気には1000ppm以上の不純物（酸素・水分）が含有されています。</p>
+            <p>対して本製品は、プリンタ内の雰囲気ガスを循環精製することで、循環精製後のガスは数 ppmレベルまで酸素・水分を除去可能であり、造形特性の向上及び安定化が期待されます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="balloon">
+        <div class="balloon__txt">造形品質・機械的強度を向上させる循環精製システム</div>
+        <a href="" class="more">PrintPure™のお問合せはこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary">商品に関するご相談・お問合せ</h2>
+      <div class="lead">金属3Dプリンターにつきまして、お困りごとがありましたらお気軽にご連絡ください。</div>
+      <a href="" class="more-orange">ご相談・お問合せ</a>
+      <div class="inquiry__box">
+        <h3 class="inquiry__box--ttl">商品の詳細はこちらから</h3>
+        <div class="flex jcC inquiry__box--list">
+          <ul class="blank">
+            <li><a href="">金属3Dプリンター｜Velo3D</a></li>
+            <li><a href="">金属3Dプリンター｜GEFERTEC</a></li>
+            <li><a href="">金属3Dプリンター｜MELTIO</a></li>
+            <li><a href="">金属3Dプリンター｜OPTOMEC</a></li>
+          </ul>
+          <ul>
+            <li><a href="">PrintPure ™</a></li>
+            <li><a href="">高純度窒素発生装置</a></li>
+            <li><a href="">金属粉末乾燥保管キャビネット</a></li>
+            <li><a href="">ワイヤー・金属粉末（お問合せ）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

@@ -38,32 +38,32 @@ import newer from 'gulp-newer';
 const paths = {
 
   styles: {
-    src: 'app/assets/scss/**/*.scss',
-    dest: 'dist/assets/css',
-    destWp: 'wp/assets/css'
+    src: 'app/dcms_media/assets/scss/**/*.scss',
+    dest: 'dist/dcms_media/assets/css',
+    destWp: 'wp/dcms_media/assets/css'
   },
 
   scripts: {
     // Order of concatenation
     src: [
-      'app/assets/js/vendor/jquery-3.2.1.min.js',
-      'app/assets/js/vendor/*.js',
-      'app/assets/js/main.js'
+      'app/dcms_media/assets/js/vendor/jquery-3.2.1.min.js',
+      'app/dcms_media/assets/js/vendor/*.js',
+      'app/dcms_media/assets/js/main.js'
     ],
-    dest: 'dist/assets/js',
-    destWp: 'wp/assets/js'
+    dest: 'dist/dcms_media/assets/js',
+    destWp: 'wp/dcms_media/assets/js'
   },
 
   images: {
-    src: 'app/assets/img/**/*',
-    dest: 'dist/assets/img',
-    destWp: 'wp/assets/img'
+    src: 'app/dcms_media/assets/img/**/*',
+    dest: 'dist/dcms_media/assets/img',
+    destWp: 'wp/dcms_media/assets/img'
   },
 
   font: {
-    src: 'app/assets/font/**/*',
-    dest: 'dist/assets/font',
-    destWp: 'wp/assets/font'
+    src: 'app/dcms_media/assets/font/**/*',
+    dest: 'dist/dcms_media/assets/font',
+    destWp: 'wp/dcms_media/assets/font'
   },
 
   njk: {
