@@ -1,0 +1,18 @@
+/*
+  ----------------
+  事業所案内
+  ----------------
+*/
+
+.hero-small.access {
+  background: url("../img/access/bg-hero.webp") 100% 50% / contain no-repeat #091626;
+  @media #{$sp} {
+    background: url("../img/access/bg-hero-sp.webp") 50% 0 / 100% no-repeat #091626;
+  }
+  .ttl-primary-lower {
+    margin-bottom: 0;
+    @media #{$sp} {
+      text-align: center;
+    }
+  }
+}

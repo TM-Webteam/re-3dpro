@@ -1,0 +1,55 @@
+/*
+  ----------------
+  金属粉末
+  ----------------
+*/
+
+.hero-lower.mp {
+  background: url("../img/mp/bg-hero.webp") 100% 50% / contain no-repeat #091626;
+  @media #{$sp} {
+    background: url("../img/mp/bg-hero-sp.webp") 50% 0 / 100% no-repeat #091626;
+  }
+  .containers {
+    @media #{$sp} {
+      padding: 150px 15px 30px;
+      text-align: center;
+    }
+  }
+}
+
+.intro-com.mp {
+  background: url("../img/mp/bg-intro-com.webp") 50% / cover no-repeat;
+  .item {
+    margin-bottom: 40px;
+    @media #{$sp} {
+      margin-bottom: 20px;
+    }
+  }
+  .small {
+    font-size: 12px;
+    font-weight: 500px;
+    @media #{$sp} {
+      font-size: 11px;
+    }
+  }
+  .more {
+    width: 380px;
+    padding: 15px;
+    @media #{$sp} {
+      width: 85%;
+      padding: 10px;
+      border-radius: 50px;
+    }
+  }
+}
+
+.stabilize.mp {
+  background: linear-gradient(to bottom, #222, #111);
+  color: #fff;
+  .containers {
+    padding: 70px 0;
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+  }
+}

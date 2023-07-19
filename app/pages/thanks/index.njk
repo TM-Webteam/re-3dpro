@@ -1,0 +1,54 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="">
+
+  <section class="hero-small contact">
+    <div class="containers">
+      <h1 class="ttl-primary-lower" data-aos="fade-right">ご相談・お問合せ</h1>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li><a href="/contact/">ご相談・お問合せ</a></li>
+        <li>お問合せいただきありがとうございました。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="thanks desc taC">
+    <div class="containers">
+
+      <h1 class="ttl-secondary">お問合せいただき<br class="sp-only">ありがとうございました。</h1>
+
+      <div class="lead">お問合せいただきました内容について、<br>担当者より後日回答をさせていただきます。<br>もうしばらくお待ちください。</div>
+
+      <a href="/" class="more">トップページに戻る</a>
+
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

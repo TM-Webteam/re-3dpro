@@ -1,0 +1,107 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <section class="hero-small access">
+    <div class="containers">
+      <h1 class="ttl-primary-lower" data-aos="fade-right">事業所案内</h1>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li>事業所案内</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="desc">
+    <div class="containers">
+      <h2 id="map01" class="desc__ttl">担当部署 事業所情報</h2>
+      <dl class="flex desc__summary">
+        <dt>事業所名</dt>
+        <dd>イノベーション事業部 イノベーション営業課 AM営業課　《芝事業所》</dd>
+        <dt>所在地</dt>
+        <dd>〒108-0014　東京都港区芝5-30-9　藤ビル3F</dd>
+        <dt>代表番号</dt>
+        <dd>03-5439-5882</dd>
+        <dt>担当者連絡先</dt>
+        <dd>TEL：090-1967-4150　Email：<a href="mailto:infotec@sanso.co.jp">infotec@sanso.co.jp</a>（AM営業課代表）</dd>
+      </dl>
+      <h3 class="desc__tit">芝事業所 アクセスマップ</h3>
+      <div class="desc__txt">最寄りの駅からの所要時間：JR田町駅下車　徒歩6分</div>
+      <div class="desc__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.2606625359986!2d139.74311717511605!3d35.64594899778756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bb1704119f7%3A0x621c9658df235816!2z44CSMTA4LTAwMTQg5p2x5Lqs6YO95riv5Yy66Iqd77yV5LiB55uu77yT77yQ4oiS77yZIOiXpOODk-ODqw!5e0!3m2!1sja!2sjp!4v1688440734698!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+      <h2 id="map02" class="desc__ttl">事業所情報</h2>
+      <dl class="flex desc__summary">
+        <dt>事業所名</dt>
+        <dd>イノベーション事業部 AMイノベーションセンター　《山梨事業所》</dd>
+        <dt>所在地</dt>
+        <dd>〒408-0015　山梨県北杜市高根町下黒沢3054-3</dd>
+        <dt>代表番号</dt>
+        <dd>0551-42-4551</dd>
+      </dl>
+      <h3 class="desc__tit">山梨事業所 アクセスマップ</h3>
+      <div class="desc__txt">最寄りのICからの所要時間：中央自動車道　須玉ICから4.2㎞</div>
+      <div class="desc__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.0235693549844!2d138.4030759132106!3d35.79317936468992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c12b1ea20683b%3A0xeeb9b48a7044345f!2z44CSNDA4LTAwMTUg5bGx5qKo55yM5YyX5p2c5biC6auY5qC555S65LiL6buS5r6k77yT77yQ77yV77yU4oiS77yT!5e0!3m2!1sja!2sjp!4v1688441439093!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+      <h2 class="desc__ttl">会社情報</h2>
+      <dl class="flex desc__summary">
+        <dt>商号</dt>
+        <dd><a href="https://www.tn-sanso.co.jp/jp/index.html" target="_blank">大陽日酸株式会社</a></dd>
+        <dt>本社</dt>
+        <dd>〒142-8558　東京都品川区小山1-3-26</dd>
+      </dl>
+
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary">商品に関するご相談・お問合せ</h2>
+      <div class="lead">金属3Dプリンター・原材料、ガスソリューションの導入に関するご相談まで、お気軽にご連絡ください。</div>
+      <a href="/contact/" class="more-orange">ご相談・お問合せ</a>
+      <div class="inquiry__box">
+        <h3 class="inquiry__box--ttl">商品の詳細はこちらから</h3>
+        <div class="flex jcC inquiry__box--list">
+          <ul class="blank">
+            <li><a href="/dcms_media/assets/img/pdf/velo3d.pdf" target="_blank">金属3Dプリンター｜Velo3D</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/gefertec.pdf" target="_blank">金属3Dプリンター｜GEFERTEC</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/meltio.pdf" target="_blank">金属3Dプリンター｜MELTIO</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/optomec.pdf" target="_blank">金属3Dプリンター｜OPTOMEC</a></li>
+          </ul>
+          <ul>
+            <li><a href="/printpure/">PrintPure ™</a></li>
+            <li><a href="/high-purity-nitrogen-generator/">高純度窒素発生装置</a></li>
+            <li><a href="/powder-dry-cabinet/">金属粉末乾燥保管キャビネット</a></li>
+            <li><a href="/contact/">金属粉末（お問合せ）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

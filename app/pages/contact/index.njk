@@ -1,0 +1,54 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <section class="hero-small contact">
+    <div class="containers">
+      <h1 class="ttl-primary-lower" data-aos="fade-right">ご相談・お問合せ</h1>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li>ご相談・お問合せ</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="form">
+    <div class="containers">
+      <ul class="form__note">
+        <li>以下フォームにご連絡先、お問合せ内容をご記入の上、送信してください。担当よりご連絡申し上げます。</li>
+        <li>回答までにお時間をいただく場合や、回答ができない場合もございますので、ご了承ください。</li>
+      </ul>
+      <input type="hidden" id="lf_form_uid" value="28039"/>
+      <input type="hidden" id="lf_form_formid" value="erctKVCD"/>
+      <div id="lf_form_div"></div>
+      <script type="text/javascript" src="//lmsg.jp/js/ja/form.js"></script>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

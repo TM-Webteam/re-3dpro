@@ -1,0 +1,108 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <section class="hero-small semi">
+    <div class="containers">
+      <h1 class="ttl-primary-lower" data-aos="fade-right">セミナー</h1>
+      <div class="lead">金属プリンタの導入・活用方法・トレンド情報など、<br class="pc-only">金属プリンタのノウハウを公開する無料セミナーのご紹介です。</div>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li>セミナー</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seminar">
+    <div class="containers">
+
+      <div class="item">
+        <h2 class="item__ttl"><span>第1回 大陽日酸＆Velo3D共催ウェビナー(字幕のみ)</span><br>Velo3D社の金属3Dプリンター</h2>
+        <div class="item__video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Frns9vZgFAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2 class="item__ttl"><span>第2回 大陽日酸＆VELO3D共催ウェビナー(字幕のみlong) </span><br>金属3Dプリンター：VELO3Dの装置「Sapphire」と<br class="pc-only">品質保証システム「Assure」のご紹介</h2>
+        <div class="item__video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fZiokSK7F3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2 class="item__ttl"><span>第3回 大陽日酸＆Velo3D共催ウェビナー</span><br>金属3Dプリンター：最先端AM技術―<br class="pc-only">サポートレスによる革新的なマイクロタービン造形</h2>
+        <div class="item__video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/eDDnxa1iyWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2 class="item__ttl"><span>第4回 大陽日酸＆Velo3D共催ウェビナー(字幕のみ)</span><br>金属3Dプリンター：最先端AM技術―Innovator’s Guide</h2>
+        <div class="item__video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DtfYqaMWGzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2 class="item__ttl"><span>第5回 大陽日酸＆Velo3D共催ウェビナー(字幕のみ)</span><br>金属3Dプリンター：「サポートレスによる燃料効率化の実現」</h2>
+        <div class="item__video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/x0JWZ5aPnBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary">商品に関するご相談・お問合せ</h2>
+      <div class="lead">金属3Dプリンター・原材料、ガスソリューションの導入に関するご相談まで、お気軽にご連絡ください。</div>
+      <a href="/contact/" class="more-orange">ご相談・お問合せ</a>
+      <div class="inquiry__box">
+        <h3 class="inquiry__box--ttl">商品の詳細はこちらから</h3>
+        <div class="flex jcC inquiry__box--list">
+          <ul class="blank">
+            <li><a href="/dcms_media/assets/img/pdf/velo3d.pdf" target="_blank">金属3Dプリンター｜Velo3D</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/gefertec.pdf" target="_blank">金属3Dプリンター｜GEFERTEC</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/meltio.pdf" target="_blank">金属3Dプリンター｜MELTIO</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/optomec.pdf" target="_blank">金属3Dプリンター｜OPTOMEC</a></li>
+          </ul>
+          <ul>
+            <li><a href="/printpure/">PrintPure ™</a></li>
+            <li><a href="/high-purity-nitrogen-generator/">高純度窒素発生装置</a></li>
+            <li><a href="/powder-dry-cabinet/">金属粉末乾燥保管キャビネット</a></li>
+            <li><a href="/contact/">金属粉末（お問合せ）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

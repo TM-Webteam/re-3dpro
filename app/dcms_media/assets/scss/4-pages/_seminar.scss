@@ -1,0 +1,88 @@
+/*
+  ----------------
+  セミナー
+  ----------------
+*/
+
+.hero-small.semi {
+  background: url("../img/seminar/bg-hero.webp") 100% 50% / contain no-repeat #091626;
+  @media #{$sp} {
+    background: url("../img/seminar/bg-hero-sp.webp") 50% 0 / 100% no-repeat #091626;
+  }
+  .ttl-primary-lower {
+    @media #{$sp} {
+      text-align: center;
+    }
+  }
+  .lead {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    @media #{$sp} {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+.seminar {
+  background: linear-gradient(to bottom, #222, #111);
+  color: #fff;
+  .item {
+    background: #000;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    @media #{$sp} {
+      padding: 20px 15px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 40px;
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
+    }
+    &__ttl {
+      font-size: 28px;
+      font-weight: bold;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+      position: relative;
+      @media #{$sp} {
+        font-size: 16px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        height: 1px;
+        background: #FA6600;
+        @media #{$sp} {
+          width: 50px;
+        }
+      }
+      span {
+        font-size: 18px;
+        @media #{$sp} {
+          font-size: 12px;
+        }
+      }
+    }
+    &__video {
+      max-width: 680px;
+      margin: 0 auto;
+      iframe {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

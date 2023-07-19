@@ -1,0 +1,27 @@
+/*
+  ----------------
+  準備中
+  ----------------
+*/
+
+.preparation {
+  background: linear-gradient(to bottom, #222, #111);
+  color: #fff;
+  .ttl-secondary {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    @media #{$sp} {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  &__img {
+    width: 200px;
+    margin: 0 auto 50px;
+    @media #{$sp} {
+      width: 150px;
+      margin: 0 auto 30px;
+    }
+  }
+}

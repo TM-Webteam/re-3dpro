@@ -1,0 +1,127 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <section class="hero-small sitemap">
+    <div class="containers">
+      <h1 class="ttl-primary-lower" data-aos="fade-right">サイトマップ</h1>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li>サイトマップ</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sitemap__box">
+    <div class="containers">
+      <div class="flex gap60">
+
+        <div class="item">
+          <ul class="item__list first">
+            <li><a href="/concept/">コンセプト</a></li>
+            <li><a href="/news/">ニュースリリース</a></li>
+            <li><a href="/company/">事業所案内</a></li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h2 class="desc__ttl">お役立ち情報</h2>
+          <ul class="item__list">
+            <li><a href="/column/">【上級者向け】コラム</a></li>
+            <li><a href="/coming_soon/" target="_blank">【初心者向け】note</a></li>
+            <li><a href="/coming_soon/" target="_blank">【初心者向け】Twitter</a></li>
+            <li><a href="/seminar/">セミナー</a></li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h2 class="desc__ttl">金属3Dプリンター</h2>
+          <ul class="item__list">
+            <li><a href="/dcms_media/assets/img/pdf/velo3d.pdf" target="_blank">VELO</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/gefertec.pdf" target="_blank">GEFERTEC</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/meltio.pdf" target="_blank">MELTIO</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/optomec.pdf" target="_blank">OPTOMEC</a></li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h2 class="desc__ttl">お問合せ</h2>
+          <ul class="item__list">
+            <li><a href="/contact/">ご相談・お問合せ</a></li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h2 class="desc__ttl">ガス技術・その他</h2>
+          <ul class="item__list">
+            <li><a href="/printpure/">PrintPure</a></li>
+            <li><a href="/high-purity-nitrogen-generator/">高純度窒素発生装置</a></li>
+            <li><a href="/powder-dry-cabinet/">金属粉末乾燥保管キャビネット</a></li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h2 class="desc__ttl">その他</h2>
+          <ul class="item__list">
+            <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
+            <li><a href="/sitemap/">サイトマップ</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary">商品に関するご相談・お問合せ</h2>
+      <div class="lead">金属3Dプリンター・原材料、ガスソリューションの導入に関するご相談まで、お気軽にご連絡ください。</div>
+      <a href="/contact/" class="more-orange">ご相談・お問合せ</a>
+      <div class="inquiry__box">
+        <h3 class="inquiry__box--ttl">商品の詳細はこちらから</h3>
+        <div class="flex jcC inquiry__box--list">
+          <ul class="blank">
+            <li><a href="/dcms_media/assets/img/pdf/velo3d.pdf" target="_blank">金属3Dプリンター｜Velo3D</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/gefertec.pdf" target="_blank">金属3Dプリンター｜GEFERTEC</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/meltio.pdf" target="_blank">金属3Dプリンター｜MELTIO</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/optomec.pdf" target="_blank">金属3Dプリンター｜OPTOMEC</a></li>
+          </ul>
+          <ul>
+            <li><a href="/printpure/">PrintPure ™</a></li>
+            <li><a href="/high-purity-nitrogen-generator/">高純度窒素発生装置</a></li>
+            <li><a href="/powder-dry-cabinet/">金属粉末乾燥保管キャビネット</a></li>
+            <li><a href="/contact/">金属粉末（お問合せ）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+{% endblock %}

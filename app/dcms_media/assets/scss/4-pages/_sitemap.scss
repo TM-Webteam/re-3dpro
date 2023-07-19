@@ -1,0 +1,65 @@
+/*
+  ----------------
+  サイトマップ
+  ----------------
+*/
+
+.hero-small.sitemap {
+  background: url("../img/sitemap/bg-hero.webp") 100% 50% / contain no-repeat #091626;
+  @media #{$sp} {
+    background: url("../img/sitemap/bg-hero-sp.webp") 50% 0 / 100% no-repeat #091626;
+  }
+  .ttl-primary-lower {
+    margin-bottom: 0;
+    @media #{$sp} {
+      text-align: center;
+    }
+  }
+}
+
+
+.sitemap__box {
+  background: linear-gradient(to bottom, #222, #111);
+  color: #fff;
+  .item {
+    width: calc(100% / 2 - 40px);
+    @media #{$sp} {
+      width: 100%;
+    }
+    &__list {
+      padding-left: 1.5em;
+      &.first {
+         margin-top: 85px;
+         @media #{$sp} {
+          margin-top: 0;
+         }
+      }
+      li {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -1.5em;
+          margin: auto;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 3px 0 3px 5px;
+          border-color: transparent transparent transparent #fff;
+        }
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+        a {
+          &:hover {
+            color: #FA6600;
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

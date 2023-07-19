@@ -41,6 +41,9 @@
 
 .video-concept {
   background: url("../img/concept/bg-video.webp") 50% / cover no-repeat;
+  .ttl-secondary {
+    margin-bottom: 0;
+  }
   &__box {
     text-align: center;
     iframe {

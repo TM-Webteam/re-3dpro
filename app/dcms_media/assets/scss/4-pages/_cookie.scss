@@ -1,0 +1,74 @@
+/*
+  ----------------
+  Cookieポリシー
+  ----------------
+*/
+
+.hero-small.cookie {
+  background: url("../img/cookie/bg-hero.webp") 100% 50% / contain no-repeat #091626;
+  @media #{$sp} {
+    background: url("../img/cookie/bg-hero-sp.webp") 50% 0 / 100% no-repeat #091626;
+  }
+  .ttl-primary-lower {
+    margin-bottom: 0;
+    @media #{$sp} {
+      text-align: center;
+    }
+  }
+}
+
+.scroll.cookie {
+  margin: 40px 0;
+  @media #{$sp} {
+    margin: 20px 0;
+  }
+}
+
+.cookie__menu {
+  @media #{$sp} {
+    width: 1000px;
+  }
+  col {
+    width: 20%;
+    &:last-child {
+      width: 40%;
+    }
+  }
+  tr {
+    background: #323232;
+    &:nth-child(odd) {
+      background: #252525;
+    }
+  }
+  th,td {
+    padding: 15px;
+    border: 1px solid #191919;
+    width: inherit;
+    display: table-cell;
+    vertical-align: top;
+  }
+  th {
+    background: #194D8C;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+  }
+  td {
+    &:last-child {
+      word-break: break-all;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      a {
+        opacity: 1;
+        color: #FA6600;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+

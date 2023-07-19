@@ -1,0 +1,157 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <section class="hero-small cookie">
+    <div class="containers">
+      <h1 class="ttl-primary-lower" data-aos="fade-right">Cookieポリシー</h1>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li>Cookieポリシー</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="desc">
+    <div class="containers">
+      <h2 class="desc__ttl">クッキーについて</h2>
+      <div class="desc__txt">
+        <p>クッキーとは、本サイトから送信されるお客さまのブラウザを識別するための符号であり、お客さまが本サイトの特定ページにアクセスした情報が、お客さま自身のコンピュータ（スマートフォンやタブレットなどを含む。以下同じ。）内に記録されるファイルのことで、これによりお客さまのコンピュータからのウェブサイト閲覧情報などのデータをクッキー発行者のサーバーに記録することが可能となるものです。なお、クッキー自体にお客さまのお名前、ご住所、電話番号、電子メールアドレスなどの個人情報は含まれません。</p>
+        <p>当サイトで使用しているクッキーの種類は下記となります。</p>
+      </div>
+      <h3 class="desc__sub">1. 必須クッキー</h3>
+      <div class="desc__txt">
+        <p><span>主に各種サービスを動作する上で必須とされるクッキー<br>（例：ログインログアウトなど）</span></p>
+        <p>この Cookie はウェブサイトが正常に機能するために必要なもので、利用者のシステム内でスイッチをオフにすることはできません。これらは通常、プライバシー設定、ログイン、フォームへの入力など、サービスのリクエストに相当するユーザーのアクションに応じてのみ設定されます。この Cookie をブロック/警告するようにブラウザを設定することは可能ですが、サイトの一部が機能しなくなります。この Cookie が個人を特定できる情報を保存することはありません。</p>
+      </div>
+      <h3 class="desc__sub">2. 分析用クッキー</h3>
+      <div class="desc__txt">
+        <p><span>主に各種サービスを動作する上で必須とされるクッキー<br>（例：閲覧時間などの利用状況の分析など）</span></p>
+        <p>利用状況把握、サービス向上検討：当サイトが提供するサービスの利用状況を把握することにより、サービス向上およびお客様の興味やニーズにより適したサービスを提供するための参考としてクッキーを利用します。</p>
+      </div>
+      <div class="scroll cookie">
+        <table class="cookie__menu">
+          <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>クッキー名称</th>
+              <th>ツール提供者</th>
+              <th>取得情報の概要</th>
+              <th>設定変更方法等</th>
+            </tr>
+            <tr>
+              <td>Google Analytics</td>
+              <td>Google Inc.</td>
+              <td>ユーザーが閲覧したページに関するデータ（ページのURLなど）</td>
+              <td>
+                <p>規約：<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites?hl=ja</a></p>
+                <p>Cookieの使用に関して：<a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=ja" target="_blank" rel="noopener">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=ja</a></p>
+                <p>無効設定：<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">https://tools.google.com/dlpage/gaoptout?hl=ja</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td>Google Search Console</td>
+              <td>Google Inc.</td>
+              <td>トラフィックデータの収集</td>
+              <td>
+                <p>規約：<a href="https://policies.google.com/terms" target="_blank" rel="noopener">https://policies.google.com/terms</a></p>
+                <p>無効設定：ブラウザの設定を変更しクッキーを無効にしてください。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Google Tag Manager</td>
+              <td>Google Inc.</td>
+              <td>ユーザー識別のため</td>
+              <td>
+                <p>規約：<a href="https://marketingplatform.google.com/intl/ja/about/analytics/tag-manager/use-policy/" target="_blank" rel="noopener">https://marketingplatform.google.com/intl/ja/about/analytics/tag-manager/use-policy/</a></p>
+                <p>無効設定：ブラウザの設定を変更しクッキーを無効にしてください。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>User Heat</td>
+              <td>株式会社ユーザーローカル</td>
+              <td>サイト内のページの閲覧履歴、各ページの滞在時間、ブラウザやOSの種類/バージョン、画面サイズ、リファラー、アクセス元、マウスの軌跡など</td>
+              <td>
+                <p>規約：<a href="https://userheat.com/stage/terms" target="_blank" rel="noopener">https://userheat.com/stage/terms</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td>ListFinder</td>
+              <td>Innovation Inc.</td>
+              <td>Webサイトやランディングページでのビジターとプロスペクトのアクティビティなど</td>
+              <td>
+                <p>規約：<a href="https://promote.list-finder.jp/wp-content/uploads/2023/03/terms-securitypolicy_20230401.pdf" target="_blank" rel="noopener">https://promote.list-finder.jp/wp-content/uploads/2023/03/terms-securitypolicy_20230401.pdf</a></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="desc__txt">
+        <p class="mb40">各ツール提供企業のオプトアウトページ、または利用するブラウザの設定からお客様自身で無効化することにより、個別にクッキーの利用を停止することができます。ブラウザの変更、クッキーの削除および新しいPCへ変更を行なった場合には再度設定が必要となることがありますので、あらかじめご了承ください。</p>
+        <p class="fw">【クッキーポリシーに関するお問い合わせ先】</p>
+        <p class="mb40">大陽日酸株式会社 イノベーションユニット<br>イノベーション事業部 イノベーション営業部 AM営業課<br>〒108-0014 東京都港区芝5-30-9 藤ビル3階
+          03-5439-5882<br><a href="mailto:infotec@sanso.co.jp">infotec@sanso.co.jp</a><br>担当：平田</p>
+        <p class="mb40">本ページは予告なく改訂することがあります。あらかじめご了承ください。</p>
+        <p>2023年6月16日更新</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary">商品に関するご相談・お問合せ</h2>
+      <div class="lead">金属3Dプリンター・原材料、ガスソリューションの導入に関するご相談まで、お気軽にご連絡ください。</div>
+      <a href="/contact/" class="more-orange">ご相談・お問合せ</a>
+      <div class="inquiry__box">
+        <h3 class="inquiry__box--ttl">商品の詳細はこちらから</h3>
+        <div class="flex jcC inquiry__box--list">
+          <ul class="blank">
+            <li><a href="/dcms_media/assets/img/pdf/velo3d.pdf" target="_blank">金属3Dプリンター｜Velo3D</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/gefertec.pdf" target="_blank">金属3Dプリンター｜GEFERTEC</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/meltio.pdf" target="_blank">金属3Dプリンター｜MELTIO</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/optomec.pdf" target="_blank">金属3Dプリンター｜OPTOMEC</a></li>
+          </ul>
+          <ul>
+            <li><a href="/printpure/">PrintPure ™</a></li>
+            <li><a href="/high-purity-nitrogen-generator/">高純度窒素発生装置</a></li>
+            <li><a href="/powder-dry-cabinet/">金属粉末乾燥保管キャビネット</a></li>
+            <li><a href="/contact/">金属粉末（お問合せ）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+{% endblock %}

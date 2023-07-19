@@ -1,0 +1,119 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <section class="hero-lower mp">
+    <div class="containers">
+      <div class="ttl-sub mb15">金属3Dプリンター用</div>
+      <h1 class="ttl-primary-lower" data-aos="fade-right">金属粉末</h1>
+      <a href="/contact/" class="more">ご相談・お問合せ</a>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">TOP</a></li>
+        <li>金属粉末</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="intro-com mp">
+    <div class="containers">
+      <div class="flex jcA item">
+        <div class="item__img" data-aos="zoom-in"><img src="/dcms_media/assets/img/mp/img-intro.webp" alt="金属3Dプリンターに最適な金属粉末を
+          ご提供いたします。"></div>
+        <div class="item__box">
+          <h2 class="item__box--ttl">金属3Dプリンターに最適な金属粉末を<br>ご提供いたします。</h2>
+          <div class="item__box--txt">
+            <p>【取り扱い商材】<br>&emsp;・Oerlikon（エリコンジャパン）<br>&emsp;・大陽日酸パウダー<br>&emsp;・Equispheres（イクスフィアーズ）<br><span class="small">※金属粉末商材は拡充予定</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="balloon">
+        <div class="balloon__txt">「Velo3DやOPTOMECだけでなく主要プリンタメーカー仕様にも対応」</div>
+        <a href="/contact/" class="more">金属粉末のお問合せはこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stabilize mp">
+    <div class="containers">
+      <h2 class="ttl-secondary-lower"><span class="small">大陽日酸 presents</span><br>金属積層造型の品質向上と安定化を<br>実現するガスソリューションをご紹介</h2>
+      <div class="flex gap30">
+        <a href="/printpure/" class="card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card__img"><img src="/dcms_media/assets/img/top/img-stabilize01.webp" alt="PrintPure™"></div>
+          <div class="card__box">
+            <div class="card__box--ttl">PrintPure™</div>
+            <div class="card__box--txt">金属積層造型の品質向上と安定化を実現する金属3Dプリンター用アドオン型循環精製装置</div>
+            <div class="more">詳しくはこちら</div>
+          </div>
+        </a>
+        <a href="/high-purity-nitrogen-generator/" class="card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card__img"><img src="/dcms_media/assets/img/top/img-stabilize02.webp" alt="高純度窒素発生装置"></div>
+          <div class="card__box">
+            <div class="card__box--ttl">高純度窒素発生装置</div>
+            <div class="card__box--txt">99.999％の高純度窒素を発生させる<br>金属3Dプリンティングに特化した装置</div>
+            <div class="more">詳しくはこちら</div>
+          </div>
+        </a>
+        <a href="/powder-dry-cabinet/" class="card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card__img"><img src="/dcms_media/assets/img/top/img-stabilize03.webp" alt="金属粉末乾燥保管キャビネット"></div>
+          <div class="card__box">
+            <div class="card__box--ttl">金属粉末乾燥保管キャビネット</div>
+            <div class="card__box--txt">金属粉末原料を極低露点、低酸素雰囲気で<br>保管し劣化を防ぐ保管庫</div>
+            <div class="more">詳しくはこちら</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary">商品に関するご相談・お問合せ</h2>
+      <div class="lead">金属3Dプリンターにつきまして、お困りごとがありましたらお気軽にご連絡ください。</div>
+      <a href="/contact/" class="more-orange">ご相談・お問合せ</a>
+      <div class="inquiry__box">
+        <h3 class="inquiry__box--ttl">商品の詳細はこちらから</h3>
+        <div class="flex jcC inquiry__box--list">
+          <ul class="blank">
+            <li><a href="/dcms_media/assets/img/pdf/velo3d.pdf" target="_blank">金属3Dプリンター｜Velo3D</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/gefertec.pdf" target="_blank">金属3Dプリンター｜GEFERTEC</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/meltio.pdf" target="_blank">金属3Dプリンター｜MELTIO</a></li>
+            <li><a href="/dcms_media/assets/img/pdf/optomec.pdf" target="_blank">金属3Dプリンター｜OPTOMEC</a></li>
+          </ul>
+          <ul>
+            <li><a href="/printpure/">PrintPure ™</a></li>
+            <li><a href="/high-purity-nitrogen-generator/">高純度窒素発生装置</a></li>
+            <li><a href="/powder-dry-cabinet/">金属粉末乾燥保管キャビネット</a></li>
+            <li><a href="/contact/">金属粉末（お問合せ）</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}
